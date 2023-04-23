@@ -6,6 +6,8 @@
 #include <stdio.h>
 int _printf(const char *format, ...);
 int _putchar(char c);
+void write_binary(unsigned int m);
+int main(void);
 #endif
 =======
 [200~#ifndef MAIN_H

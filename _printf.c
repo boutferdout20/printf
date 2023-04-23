@@ -9,7 +9,7 @@ int _printf(const char *format, ...)
 {
 va_list list;
 va_start(list);
-int m ;
+int m;
 char *str;
 while (*format != '\0')
 {
@@ -24,7 +24,7 @@ case 'c':
 	break;
 case 's':
 	str = (char *) va_arg(list, char *);
-	while (*str != '\0')	
+	while (*str != '\0')
 	{
 	str++;
 	m++;
@@ -35,7 +35,6 @@ case '%':
 	break;
 default:{
 	return (-1);
-	break;
 	}
 	}
 }
