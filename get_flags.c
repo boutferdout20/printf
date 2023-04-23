@@ -24,6 +24,6 @@ if (FLAGS_C[b] == 0)
 break;
 }
 *i = cu_b - 1;
-return(flags);
+return (flags);
 }
 }
