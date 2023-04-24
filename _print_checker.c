@@ -9,6 +9,7 @@ int _checker_p(char k, va_list args)
 {
 	char *c = "0123456789abcdef";
 	char *C = "0123456789ABCDEF";
+
 	if (k == 'c')
 	return (_putchar(va_arg(args, int)));
 	else if (k == 's')
@@ -29,5 +30,5 @@ int _checker_p(char k, va_list args)
 		return (_pri_ligne(va_arg(args, char *), c, C));
 	_putchar('%');
 	_putchar(k);
-	return (0);
+	return (2);
 }

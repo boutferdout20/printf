@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _print_string - print a string
+* _pri_ligne - print a string
 * @k : the string to print
 * @c : a hexadecimal (base 16) integer
 * @C : a hexadecimal (upper case)
@@ -10,7 +10,7 @@
 
 int _pri_ligne(char *k, char __attribute__((unused)) *c, char *C)
 {
-	int i, j= 0;
+	int i, j = 0;
 
 	if (k == NULL)
 		k = "(null)";

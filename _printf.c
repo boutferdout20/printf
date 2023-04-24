@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	int a = 0;
 	int tgv = 0;
 	va_list list;
-	
+
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	if (format[0] == ' ' && format[1] == '%' && format[2] == '\0')
@@ -23,6 +23,10 @@ int _printf(const char *format, ...)
 			format++;
 			if (format[a] == '%')
 				tgv += _putchar('%');
+			else if (format[a] == '\0')
+			{
+				return (-1);
+			}
 			else
 				tgv += _checker_p(format[a], list);
 		}
@@ -35,4 +39,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	return (tgv);
+
 }
