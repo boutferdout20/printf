@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
 
 #include <unistd.h>
 #include <stdarg.h>
@@ -22,5 +23,4 @@ int _pri_st(char *st);
 int _pri_binary(unsigned int m);
 int _pri_unsi_int(unsigned int m, int base, char *digit);
 int _pri_int(int m);
-
 #endif
