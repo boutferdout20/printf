@@ -31,5 +31,5 @@ int _checker_p(char k, va_list args)
 		return (_pri_ligne(va_arg(args, char *), c, C));
 	_putchar('%');
 	_putchar(k);
-	return (0);
+	return (2);
 }
