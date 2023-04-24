@@ -9,5 +9,5 @@
 */
 int _pri_st(char *st)
 {
-	return (write(1, st, _strlen(st)));
+	return (write(1, st, _str(st)));
 }
