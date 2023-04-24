@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _checker_p - check the character and call appropriate functions
  * @k: character to check

@@ -29,6 +29,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			tgv += _putchar(format[a]);
+
 		}
 		format++;
 	}
