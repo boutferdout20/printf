@@ -9,6 +9,5 @@
 */
 int _pri_st(char *st)
 {
-	st = "(null)";
 	return (write(1, st, _str(st)));
 }
