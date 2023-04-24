@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	int a = 0;
 	int tgv = 0;
 	va_list list;
-	
+
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	if (format[0] == ' ' && format[1] == '%' && format[2] == '\0')
