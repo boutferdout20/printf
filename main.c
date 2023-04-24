@@ -7,8 +7,8 @@ int main(void)
 {
 int incr;
 unsigned int oui;
-len = _printf("Let's try to printf a simple sentence.\n");
-ui = (unsigned int)INT_MAX + 1024;
+incr = _printf("Let's try to printf a simple sentence.\n");
+oui = (unsigned int)INT_MAX + 1024;
 _printf("Length:[%d,%i]\n", incr, incr);
 _printf("Negative:[%d]\n", -762534);
 _printf("Btissam & Youssef\n");
