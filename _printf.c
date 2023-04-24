@@ -23,6 +23,8 @@ int _printf(const char *format, ...)
 			format++;
 			if (format[a] == '%')
 				tgv += _putchar('%');
+			else if(format[a] == '\0')
+				return(0);
 			else
 				tgv += _checker_p(format[a], list);
 		}
@@ -34,4 +36,5 @@ int _printf(const char *format, ...)
 	}
 	va_end(list);
 	return (tgv);
+	
 }
