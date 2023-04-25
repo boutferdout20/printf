@@ -1,18 +1,20 @@
 #include "main.h"
 /**
- * _pri_pointer - prints pointer address into the standard output
- * @p: pointer address
- *
- * Return: number of characters printed
+ * _pri_pointer - le pointeur
+ * @p: chiffre qui afficher
+ * Return: 3onwan de pointeur
  */
 int _pri_pointer(void *p)
 {
-	unsigned long int d = (unsigned long int)p;
-	int i = 0;
-
-	i += _putchar('0');
-	i += _putchar('x');
-	i += _pri_unsi_int(d, 16, "0123456789abcdef");
-
-	return (i);
+int htm = 0;
+unsigned int pp;
+if (!p)
+{
+htm += _pri_st("(nil)");
+return (htm);
+}
+pp = (unsigned long int)p;
+htm += _pri_st("0x");
+htm += _pri_unsi_int(pp, 16, "0123456789abcdef");
+return (htm);
 }
