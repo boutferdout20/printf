@@ -11,20 +11,20 @@ int _checker_p(char k, va_list args)
 	char *C = "0123456789ABCDEF";
 
 	if (k == 'c')
-	return (_putchar(va_arg(args, int)));
+		return (_putchar(va_arg(args, int)));
 	else if (k == 's')
-	return (_pri_st(va_arg(args, char *)));
+		return (_pri_st(va_arg(args, char *)));
 	else if (k == 'i' || k == 'd')
-	return (_pri_int(va_arg(args, int)));
+		return (_pri_int(va_arg(args, int)));
 	else if (k == 'b')
-	return (_pri_binary(va_arg(args, unsigned int)));
+		return (_pri_binary(va_arg(args, unsigned int)));
 	else if (k == 'u')
-	return (_pri_unsi_int(va_arg(args, unsigned int), 10, "0123456789"));
+		return (_pri_unsi_int(va_arg(args, unsigned int), 10, "0123456789"));
 	else if (k == 'o')
-	return (_pri_unsi_int(va_arg(args, unsigned int), 8, "01234567"));
-	else if (k == 'x')
+		return (_pri_unsi_int(va_arg(args, unsigned int), 8, "01234567"));
+	else if (k == 'c')
 		return (_pri_unsi_int(va_arg(args, unsigned int), 16, "0123456789abcdef"));
-	else if (k == 'X')
+	else if (k == 'C')
 		return (_pri_unsi_int(va_arg(args, unsigned int), 16, "0123456789ABCDEF"));
 	else if (k == 'S')
 		return (_pri_ligne(va_arg(args, char *), c, C));

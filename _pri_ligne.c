@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _pri_ligne - print a string
 * @k : the string to print
@@ -7,7 +6,6 @@
 * @C : a hexadecimal (upper case)
 * Return: string
 */
-
 int _pri_ligne(char *k, char __attribute__((unused)) *c, char *C)
 {
 	int i, j = 0;
