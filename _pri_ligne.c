@@ -6,7 +6,7 @@
 * @C : a hexadecimal (upper case)
 * Return: string
 */
-int _pri_ligne(char *k, char __attribute__((unused)) *c, char *C)
+int _pri_ligne(char *k, char  __attribute__((unused)) *c, char *C)
 {
 	int i, j = 0;
 
@@ -20,11 +20,11 @@ int _pri_ligne(char *k, char __attribute__((unused)) *c, char *C)
 			_putchar('c');
 			j += 2;
 			if (k[i] < 16)
-				j += _putchar('0');
+			j += _putchar('0');
 			j += _pri_unsi_int((unsigned int)k[i], 16, C);
 		}
 		else
-			j += _putchar(k[i]);
+		j += _putchar(k[i]);
 	}
-	return (j);
+return (j);
 }
