@@ -10,7 +10,7 @@
 
 int _pri_binary(unsigned int m)
 {
-	int i;
+	int i = 0;
 
 	if (m / 2)
 		i += _pri_binary(m / 2);
