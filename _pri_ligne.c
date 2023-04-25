@@ -19,7 +19,7 @@ int _pri_ligne(char *k, char __attribute__((unused)) *c, char *C)
 		if (k[i] < 32 || k[i] >= 127)
 		{
 			_putchar('\\');
-			_putchar('c');
+			_putchar('x');
 			j += 2;
 			if (k[i] < 16)
 				j += _putchar('0');
