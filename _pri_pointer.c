@@ -2,7 +2,7 @@
 /**
  * _pointer_b - function to hexadicimale
  * @h: chiffre
- * @m:la base de chiffre
+ * @b:la base de chiffre
  * Return: 3la hassab hexa
  */
 int _pointer_b(unsigned long int h, char b)

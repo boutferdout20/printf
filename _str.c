@@ -7,7 +7,7 @@
 int _str(char *m)
 {
 int inc = 0;
-while (*m++)
+while (m[inc] != '\0')
 inc++;
 return (inc);
 }

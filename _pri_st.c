@@ -12,7 +12,7 @@ int _pri_st(char *st)
 int n = 0;
 if (st == NULL)
 {
-write (1, "(null)", 6);
+write(1, "(null)", 6);
 return (6);
 }
 while (st[n])

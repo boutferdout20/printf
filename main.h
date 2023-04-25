@@ -31,5 +31,6 @@ int _pri_int(int m);
 int _pointer_b(unsigned long int h, char b);
 int _pri_pointer(void *p);
 int _printf(const char *format, ...);
-
+int revstring(va_list ap, int mode);
+char *rot13(char *s);
 #endif
