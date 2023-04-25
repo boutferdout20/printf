@@ -16,7 +16,6 @@
 int _printf(const char *format, ...);
 int _checker_p(char k, va_list args);
 int _str(char *m);
-int _pri_st(char *st);
 int _pri_ligne(char *k, char *c, char *C);
 int _putchar(char);
 int _pri_st(char *st);
