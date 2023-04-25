@@ -14,7 +14,7 @@ int _checker_p(char k, va_list args)
 	return (_putchar(va_arg(args, int)));
 	else if (k == 's')
 	return (_pri_st(va_arg(args, char *)));
-	else if (k == 'd' || k == 'i')
+	else if (k == 'i' || k == 'd')
 	return (_pri_int(va_arg(args, int)));
 	else if (k == 'b')
 	return (_pri_binary(va_arg(args, unsigned int)));
@@ -28,6 +28,10 @@ int _checker_p(char k, va_list args)
 		return (_pri_unsi_int(va_arg(args, unsigned int), 16, "0123456789ABCDEF"));
 	else if (k == 'S')
 		return (_pri_ligne(va_arg(args, char *), c, C));
+	else if (k == 'p')
+		return (_pri_pointer(va_arg(args, void*)));
+	else if (k == '%')
+		return (_putchar('%'));
 	_putchar('%');
 	_putchar(k);
 	return (2);
