@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * _printf - custom printf implementation
- * @format: format string
- * Return: number of characters printed
- */
+* _printf - prints formatted strings and inputs into the standard output
+* @format: format of string
+*
+* Return: number of characters printed
+*/
+
 int _printf(const char *format, ...)
 {
-	int a = 0;
-	int tgv = 0;
-	va_list list;
-
-	va_start(list, format);
+	int i = 0, cmp = 0;
+	va_list args;
 
 	if (format == NULL)
 		return (-1);
@@ -19,20 +18,22 @@ int _printf(const char *format, ...)
 	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && format[2] == '\0')
-	return (-1);
-	while (format && format[a])
+		return (-1);
+
+	va_start(args, format);
+
+	while (format && format[i])
 	{
-		if (format[a] == '%')
+		if (format[i] == '%')
 		{
-			a++;
-			tgv += _checker_p(format[a], list);
+			i++;
+
+			cmp += _checker_p(format[i], args);
 		}
 		else
-		{
-			tgv += _putchar(format[a]);
-			a++;
-		}
+			cmp += _putchar(format[i]);
+		i++;
 	}
-	va_end(list);
-	return (tgv);
+	va_end(args);
+	return (cmp);
 }

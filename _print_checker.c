@@ -32,6 +32,11 @@ int _checker_p(char k, va_list args)
 		return (_pri_pointer(va_arg(args, void*)));
 	else if (k == '%')
 		return (_putchar('%'));
+/**else if (c == 'r')
+		return (_print_rev_str(va_arg(list, char )));
+	else if (c == 'R')
+		return (_print_rot13(va_arg(list, char)));
+		*/
 	_putchar('%');
 	_putchar(k);
 	return (2);
