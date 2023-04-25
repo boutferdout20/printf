@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _pri_int - prints integer into the standard output
 * @m: integer
