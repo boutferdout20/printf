@@ -9,7 +9,16 @@
 
 int _pri_st(char *st)
 {
+int n = 0;
 if (st == NULL)
-st = "(null)";
+{
+write (1, "(null)", 6);
+return (6);
+}
+while (st[n])
+{
+_putchar(st[n]);
+n++;
+}
 return (write(1, st, _str(st)));
 }
