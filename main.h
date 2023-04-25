@@ -22,5 +22,6 @@ int _pri_st(char *st);
 int _pri_binary(unsigned int m);
 int _pri_unsi_int(unsigned int m, int base, char *digit);
 int _pri_int(int m);
+int _pointer_b(unsigned long int h, char b);
 int _pri_pointer(void *p);
 #endif

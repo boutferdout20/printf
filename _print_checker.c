@@ -7,8 +7,8 @@
  */
 int _checker_p(char k, va_list args)
 {
-	char *c = "0123456789abcdef";
-	char *C = "0123456789ABCDEF";
+	char *x = "0123456789abcdef";
+	char *X = "0123456789ABCDEF";
 
 	if (k == 'c')
 		return (_putchar(va_arg(args, int)));
@@ -22,12 +22,12 @@ int _checker_p(char k, va_list args)
 		return (_pri_unsi_int(va_arg(args, unsigned int), 10, "0123456789"));
 	else if (k == 'o')
 		return (_pri_unsi_int(va_arg(args, unsigned int), 8, "01234567"));
-	else if (k == 'c')
-		return (_pri_unsi_int(va_arg(args, unsigned int), 16, c));
-	else if (k == 'C')
-		return (_pri_unsi_int(va_arg(args, unsigned int), 16, C));
+	else if (k == 'x')
+		return (_pri_unsi_int(va_arg(args, unsigned int), 16, x));
+	else if (k == 'X')
+		return (_pri_unsi_int(va_arg(args, unsigned int), 16, X));
 	else if (k == 'S')
-		return (_pri_ligne(va_arg(args, char *), c, C));
+		return (_pri_ligne(va_arg(args, char *), x, X));
 	else if (k == 'p')
 		return (_pri_pointer(va_arg(args, void*)));
 	else if (k == '%')
