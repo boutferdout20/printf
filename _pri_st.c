@@ -9,7 +9,14 @@
 */
 int _pri_st(char *st)
 {
+	int i;
+
 	if (st == NULL)
-	st = "(null)";	
-	return (write(1, st, _str(st)));
+	st = "(null)";
+	while (st[i])
+	{
+		_putchar(st[i]);
+		i++;
+	}
+	return (i);
 }
