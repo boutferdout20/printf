@@ -23,9 +23,9 @@ int _checker_p(char k, va_list args)
 	else if (k == 'o')
 		return (_pri_unsi_int(va_arg(args, unsigned int), 8, "01234567"));
 	else if (k == 'c')
-		return (_pri_unsi_int(va_arg(args, unsigned int), 16, c));
+		return (_pri_unsi_int(va_arg(args, unsigned int), 16, "0123456789abcdef"));
 	else if (k == 'C')
-		return (_pri_unsi_int(va_arg(args, unsigned int), 16, C));
+		return (_pri_unsi_int(va_arg(args, unsigned int), 16, "0123456789ABCDEF"));
 	else if (k == 'S')
 		return (_pri_ligne(va_arg(args, char *), c, C));
 	else if (k == 'p')
