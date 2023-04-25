@@ -13,7 +13,7 @@
 #define BUFF_SIZE 1024
 
 /** les prototypes**/
-int _printf(const char *format, ...);
+
 int _checker_p(char k, va_list args);
 int _str(char *m);
 int _pri_ligne(char *k, char *c, char *C);
@@ -24,4 +24,6 @@ int _pri_unsi_int(unsigned int m, int base, char *digit);
 int _pri_int(int m);
 int _pointer_b(unsigned long int h, char b);
 int _pri_pointer(void *p);
+int _printf(const char *format, ...);
+
 #endif

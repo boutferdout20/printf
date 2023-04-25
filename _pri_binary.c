@@ -9,6 +9,7 @@
 int _pri_binary(unsigned int m)
 {
 	int i = 0;
+
 	if (m / 2)
 	i += _pri_binary(m / 2);
 	i += _putchar(m % 2 + '0');

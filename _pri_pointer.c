@@ -8,7 +8,7 @@
 int _pointer_b(unsigned long int h, char b)
 {
 int a = 0, l, u;
-char *X= "0123456789abcdef";
+char *X = "0123456789abcdef";
 char m[64];
 if (h == 0)
 return (-1);

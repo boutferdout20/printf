@@ -7,6 +7,7 @@
 * by: elmouy & boutferdout20
 * Return: number of characters printed
 */
+
 int _pri_st(char *st)
 {
 if (st == NULL)
