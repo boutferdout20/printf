@@ -14,9 +14,9 @@ int _checker_p(char k, va_list args)
 		return (_putchar(va_arg(args, int)));
 	else if (k == 's')
 		return (_pri_st(va_arg(args, char *)));
-	else if (k == 'b' || k == 'd')
+	else if (k == 'i' || k == 'd')
 		return (_pri_int(va_arg(args, int)));
-	else if (k == 'i')
+	else if (k == 'b')
 		return (_pri_binary(va_arg(args, unsigned int)));
 	else if (k == 'u')
 		return (_pri_unsi_int(va_arg(args, unsigned int), 10, "0123456789"));
