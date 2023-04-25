@@ -9,7 +9,5 @@
 */
 int _pri_st(char *st)
 {
-	if (st == NULL)
-	st = "(null)";
 return (write(1, st, _str(st)));
 }
