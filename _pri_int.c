@@ -14,12 +14,20 @@ int _pri_int(int m)
 	if (m < 0)
 	{
 		i += _putchar('-');
-		m = -m;
+		if (m == -2147483648)
+		{
+			i += _putchar('2');
+			m %= 1000000000;
+		}
+		i += _pri_int(-m);
 	}
 
-	if (m / 10)
+	else if (m >= 0 && m <= 9)
+		i += _putchar(m + '0');
+	else
+	{
 		i += _pri_int(m / 10);
-
-	i += _putchar((m % 10) + '0');
+		i += _pri_int(m % 10);
+	}
 	return (i);
 }
