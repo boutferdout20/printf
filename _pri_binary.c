@@ -10,7 +10,7 @@
 
 int _pri_binary(unsigned int m)
 {
-	static int i;
+	int i;
 
 	if (m / 2)
 		i += _pri_binary(m / 2);
