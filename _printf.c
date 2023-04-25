@@ -8,9 +8,11 @@
 int _printf(const char *format, ...)
 {
 	int a = 0;
-	int tgv = 0;
+       	int tgv = 0;
 	va_list list;
+
 	va_start(list, format);
+
 	if (format == NULL)
 		return (-1);
 
@@ -24,9 +26,7 @@ int _printf(const char *format, ...)
 		if (format[a] == '%')
 		{
 			a++;
-			if (format[a] == '\0')
-				return (-1);
-				tgv += _checker_p(format[a], list);
+			tgv += _checker_p(format[a], list);
 		}
 		else
 			tgv += _putchar(format[a]);		
